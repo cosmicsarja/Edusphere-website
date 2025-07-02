@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Edutech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Logo and Search Bar -->
+    <header>
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="EDUSPHERE-2.png" alt="Edutech Logo" class="logo-img" height="100">
+                <h1 class="logo-text">Edusphere</h1>
+            </div>
+    
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses, subjects, or resources..." class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+    
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                    </ul>
+                </nav>
+                <div class="student-profile" onclick="toggleProfileDropdown()">
+                    <img src="sarju.jpeg" alt="Student Profile" class="profile-pic">
+                    <span class="profile-name">Sarju Desai</span>
+                    <!-- Dropdown Menu -->
+                    <!-- Profile Dropdown -->
+                     <div class="profile-dropdown" id="profileDropdown">
+                        <div class="dropdown-header">
+                            <img src="sarju.jpeg" alt="Student Profile" class="dropdown-pic">
+                            <div class="dropdown-info">
+                             <span class="dropdown-name">Sarju Desai</span>
+                            <span class="dropdown-email">sarjudesai75@gmail.com</span>
+                             </div>
+                         </div>
+                            <ul class="dropdown-menu">
+        <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="admin-login.html"><i class="fas fa-lock"></i> Admin Login</a></li> <!-- Added Admin Login -->
+        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <section class="form-container">
+        <div class="container">
+            <div class="form-card">
+                <h2>Student Registration</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Create Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Education Level</label>
+                        <select required>
+                            <option value="">Select Level</option>
+                            <option value="kg">KG</option>
+                            <option value="1-10">1st-10th</option>
+                            <option value="11-12">11th-12th</option>
+                            <option value="ug">Undergraduate</option>
+                            <option value="pg">Postgraduate</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" placeholder="City, State" required>
+                    </div>
+                    <button type="submit"class="cta-button">Register Now</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index Page) -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@edutech.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/edutech" target="_blank">Instagram</a>
+                        <a href="https://linkedin.com/edutech" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/edutech" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>  
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Edutech. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

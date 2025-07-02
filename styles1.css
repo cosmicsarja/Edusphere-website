@@ -1,0 +1,112 @@
+/* Resources Page Styles */
+.subject-resources {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.subject-section {
+    margin-bottom: 60px;
+}
+
+.subject-section h2 {
+    color: #007aff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.resource-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Notes Section */
+.notes-section h3, .video-section h3, .quiz-section h3 {
+    color: #1d1d1f;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.notes-card {
+    background-color: #f5f5f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.notes-card:hover {
+    transform: translateY(-5px);
+}
+
+.notes-button {
+    background-color: #007aff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.notes-button:hover {
+    background-color: #005bb5;
+}
+
+/* Video Section */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #f5f5f7;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-card iframe {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Quiz Section */
+.quiz-section {
+    background-color: #f5f5f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quiz-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.quiz-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.quiz-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resource-layout {
+        grid-template-columns: 1fr;
+    }
+}
