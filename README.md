@@ -34,12 +34,11 @@ Organized by:
 ---
 
 ## 💻 Tech Stack (Suggested)
-- **Frontend**: React / Next.js
-- **Backend**: Node.js / Firebase
-- **Database**: Firestore / MongoDB
+- **Frontend**: html/css
+- **Backend**: javascript
+- **Database**: need to work
 - **Chatbot**: Custom AI (Sara)
-- **Hosting**: Vercel / Netlify / AWS
-
+- **Hosting**: no
 ---
 
 ## 🤝 Contributions
