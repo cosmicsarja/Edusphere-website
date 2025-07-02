@@ -56,7 +56,7 @@ Feel free to fork, contribute, or suggest!
 
 **Sarju Desai**  
 Creator and Maintainer of Edusphere  
-📫 [Add your contact/socials here]
+
 
 ---
 
